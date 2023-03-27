@@ -3,4 +3,6 @@ layout: home.njk
 permalink: index.html
 ---
 
-Test
+# Hello World.
+
+Hi.
