@@ -1,0 +1,40 @@
+.header {
+  width: 100%;
+  position: absolute;
+  color: $text-light;
+
+  &__wrapper {
+    margin: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    width: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
+    &-desc {
+      width: inherit;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-gap: 36px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+    }
+
+    &-active {
+      border-bottom: 2px solid $primary;
+    }
+  }
+}

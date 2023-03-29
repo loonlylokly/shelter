@@ -4,7 +4,8 @@
   "description": "11ty static site template",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch src/styles/style.scss ./site/style.css"
+    "sass": "sass --watch site/styles/style.scss ./site/style.css",
+    "build": "sass site/styles/style.scss ./site/style.css"
   },
   "author": "me",
   "license": "ISC",

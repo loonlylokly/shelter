@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Arial";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Arial"), 
+      url(fonts/Arial.woff) format("woff"),
+      url(fonts/Arial.ttf) format("ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Georgia"), 
+      url(fonts/Georgia.woff) format("woff"),
+      url(fonts/Georgia.ttf) format("ttf");
+  font-display: swap;
+}
+

@@ -1,0 +1,24 @@
+.about {
+  &__wrapper {
+    width: $content-width;
+    display: flex;
+    column-gap: 120px;
+    margin: 80px 40px 100px;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 300px;
+  }
+
+  &__text {
+    width: 430px;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 25px;
+  }
+
+  &__title {
+    width: 370px;
+  }
+}
