@@ -13,6 +13,7 @@
 
   &__text {
     width: 430px;
+    margin-top: 14px;
     display: flex;
     flex-flow: column nowrap;
     row-gap: 25px;
@@ -20,5 +21,20 @@
 
   &__title {
     width: 370px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $text-dark;
+  }
+  &__desc {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: $text-dark-sub;
   }
 }

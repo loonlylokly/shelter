@@ -13,10 +13,17 @@
     width: 186px;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    row-gap: 10px;
 
     &-desc {
       width: inherit;
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.3rem;
+      line-height: 15px;
+      letter-spacing: 0.1em;
+      text-align: center;
     }
   }
 
