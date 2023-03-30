@@ -56,7 +56,9 @@ header {
     }
 
     &-active {
-      border-bottom: 2px solid $primary;
+      &::before {
+        width: 100%;
+      }
     }
   }
 }

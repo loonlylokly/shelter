@@ -3,6 +3,8 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
+  // overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -98,6 +100,9 @@ p {
 
   &:hover {
     background: $primary-light;
+    &::before {
+      width: 0% !important;
+    }
   }
 }
 
@@ -117,6 +122,9 @@ p {
 
   &:hover {
     background: rgb(8, 8, 8, 0.2);
+    &::before {
+      width: 0% !important;
+    }
   }
 }
 
@@ -140,11 +148,38 @@ p {
 
   &:hover {
     background: rgb(8, 8, 8, 0.2);
+    &::before {
+      width: 0% !important;
+    }
   }
 }
 
+.btn-disable {
+
+}
+
 a {
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: #000;
-  transition: 1s;
+
+  &:before{
+    content: '';
+    background: $primary;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-position: 0;
+    &::before {
+      width: 100%;
+    }
+  }
 }

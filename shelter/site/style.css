@@ -15,6 +15,7 @@
 html {
   box-sizing: border-box;
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -111,6 +112,9 @@ p {
 .btn-primary:hover {
   background: #FDDCC4;
 }
+.btn-primary:hover::before {
+  width: 0% !important;
+}
 
 .btn-secondary {
   width: fit-content;
@@ -128,6 +132,9 @@ p {
 }
 .btn-secondary:hover {
   background: rgba(8, 8, 8, 0.2);
+}
+.btn-secondary:hover::before {
+  width: 0% !important;
 }
 
 .btn-arrow {
@@ -151,11 +158,32 @@ p {
 .btn-arrow:hover {
   background: rgba(8, 8, 8, 0.2);
 }
+.btn-arrow:hover::before {
+  width: 0% !important;
+}
 
 a {
+  display: inline-block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: #000;
-  transition: 1s;
+}
+a:before {
+  content: "";
+  background: #F1CDB3;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  background-position: 0;
+}
+a:hover::before {
+  width: 100%;
 }
 
 header {
@@ -209,8 +237,8 @@ header {
   text-decoration: none;
   color: #FFFFFF;
 }
-.header__menu-active {
-  border-bottom: 2px solid #F1CDB3;
+.header__menu-active::before {
+  width: 100%;
 }
 
 .promo {
