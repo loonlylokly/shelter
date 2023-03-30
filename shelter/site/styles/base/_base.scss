@@ -152,6 +152,10 @@ p {
       width: 0% !important;
     }
   }
+
+  &__active {
+    background: $primary;
+  }
 }
 
 .btn-disable {

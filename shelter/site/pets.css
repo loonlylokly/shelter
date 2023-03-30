@@ -161,6 +161,9 @@ p {
 .btn-arrow:hover::before {
   width: 0% !important;
 }
+.btn-arrow__active {
+  background: #F1CDB3;
+}
 
 a {
   display: inline-block;
