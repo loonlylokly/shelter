@@ -103,7 +103,13 @@ p {
   font-size: 1.7rem;
   line-height: 130%;
   letter-spacing: 0.1rem;
+  text-decoration: none;
   color: #292929;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-primary:hover {
+  background: #FDDCC4;
 }
 
 .btn-secondary {
@@ -117,6 +123,11 @@ p {
   line-height: 130%;
   letter-spacing: 0.1rem;
   color: #292929;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-secondary:hover {
+  background: rgba(8, 8, 8, 0.2);
 }
 
 .btn-arrow {
@@ -134,6 +145,17 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-arrow:hover {
+  background: rgba(8, 8, 8, 0.2);
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 1s;
 }
 
 header {
@@ -157,6 +179,7 @@ header {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  color: #F1CDB3;
 }
 .header__logo-desc {
   width: inherit;
@@ -167,6 +190,7 @@ header {
   line-height: 15px;
   letter-spacing: 0.1em;
   text-align: center;
+  color: #FFFFFF;
 }
 .header__menu {
   display: flex;
@@ -306,9 +330,18 @@ header {
   flex-flow: column nowrap;
   align-items: center;
   row-gap: 30px;
+  background: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
+.pets__card .btn-secondary {
+  margin: 0 0 26px;
+}
+.pets__card:hover {
+  transform: scale(1.1);
 }
 .pets__btn {
-  margin: 25px 0 100px 0;
+  margin: 0 0 100px 0;
 }
 
 .help {

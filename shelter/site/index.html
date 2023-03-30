@@ -5,21 +5,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelter</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="header">
       <div class="header__wrapper">
-        <div class="header__logo">
+        <a class="header__logo" href="#">
           <h1 class="header__logo-title">Cozy House</h1>
           <p class="header__logo-desc">Shelter for pets in Boston</p>
-        </div>
+        </a>
         <ul class="header__menu">
-          <li class="header__menu-item"><a class="header__menu-link header__menu-active" href="#">About the shelter</a></li>
+          <li class="header__menu-item"><a class="header__menu-link header__menu-active" href="#index.html">About the shelter</a></li>
           <li class="header__menu-item"><a class="header__menu-link" href="pets.html">Our pets</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Help the shelter</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Contacts</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#help">Help the shelter</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#contacts">Contacts</a></li>
         </ul>
       </div>
     </div>
@@ -31,7 +32,7 @@
         <div class="promo__block">
           <h2 class="promo__title">Not only people need a house</h2>
           <p class="promo__text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-          <button class="btn-primary">Make a friend</button>  
+          <a class="btn-primary" href="#pets">Make a friend</a>  
         </div>
         <img src="./assets/image/promo-puppy.png" alt="dog" class="promo__img">
       </div>
@@ -46,7 +47,7 @@
         </div>
       </div>
     </section>
-    <section class="pets">
+    <section id="pets" class="pets">
       <div class="pets__wrapper">
         <h2 class="pets__title">Our friends who<br>are looking for a house</h2>
         <div class="pets__slider">
@@ -70,10 +71,10 @@
           </div>
           <button class="btn-arrow"><b>→</b></button>
         </div>
-        <button class="btn-primary pets__btn">Get to know the rest</button>
+        <a class="btn-primary pets__btn" href="pets.html">Get to know the rest</a>
       </div>
     </section>
-    <section class="help">
+    <section id="help" class="help">
       <div class="help__wrapper">
         <h2 class="help__title">How you can help our shelter</h2>
         <div class="help__list">
@@ -131,12 +132,12 @@
       </div>
      </section>
   </main>
-  <footer class="footer">
+  <footer id="contacts" class="footer">
     <div class="footer__wrapper">
       <div class="footer__block">
         <h2 class="footer__title">For questions and suggestions</h2>
-        <a href="" class="footer__link"><img class="footer__icon" src="./assets/icons/icon-email.svg" alt="icon email">email@shelter.com</a>
-        <a href="" class="footer__link"><img class="footer__icon" src="./assets/icons/icon-phone.svg" alt="icon phone">+13 674 567 75 54</a>
+        <a href="mailto:email@shelter.com" class="footer__link"><img class="footer__icon" src="./assets/icons/icon-email.svg" alt="icon email">email@shelter.com</a>
+        <a href="tel:+13 674 567 75 54" class="footer__link"><img class="footer__icon" src="./assets/icons/icon-phone.svg" alt="icon phone">+13 674 567 75 54</a>
       </div>
       <div class="footer__block">
         <h2 class="footer__title">We are waiting for your visit</h2>

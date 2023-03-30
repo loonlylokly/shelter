@@ -91,7 +91,14 @@ p {
   font-size: 1.7rem;
   line-height: 130%;
   letter-spacing: 0.1rem;
+  text-decoration: none;
   color: $text-button;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background: $primary-light;
+  }
 }
 
 .btn-secondary {
@@ -105,6 +112,12 @@ p {
   line-height: 130%;
   letter-spacing: 0.1rem;
   color: $text-button;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background: rgb(8, 8, 8, 0.2);
+  }
 }
 
 .btn-arrow {
@@ -122,4 +135,16 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    background: rgb(8, 8, 8, 0.2);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  transition: 1s;
 }

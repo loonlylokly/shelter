@@ -38,9 +38,15 @@
     flex-flow: column nowrap;
     align-items: center;
     row-gap: 30px;
+    background: #fff;
+    transition: 1s;
 
     & .btn-secondary {
       margin: 0 0 30px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 

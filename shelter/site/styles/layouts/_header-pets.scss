@@ -1,6 +1,10 @@
 .header {
   color: $text-dark;
 
+  &__logo-title {
+    color: $text-dark
+  }
+
   &__menu-item a {
     color: $text-dark;
   }
