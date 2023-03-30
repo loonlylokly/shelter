@@ -1,4 +1,6 @@
 .about {
+  display: flex;
+  justify-content: center;
   &__wrapper {
     width: $content-width;
     display: flex;

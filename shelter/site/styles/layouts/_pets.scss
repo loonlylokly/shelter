@@ -1,6 +1,8 @@
 .pets {
+  display: flex;
+  justify-content: center;
   background: $background-second;
-  padding: 80px 40px 100px;
+  padding: 80px 40px 0;
 
   &__wrapper {
     width: $content-width;
@@ -40,16 +42,6 @@
     flex-flow: column nowrap;
     align-items: center;
     row-gap: 30px;
-
-    &-title {
-      font-family: 'Georgia';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 23px;
-      letter-spacing: 0.06em;
-      color: $text-dark;
-    }
   }
 
   &__btn {

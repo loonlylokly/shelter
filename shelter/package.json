@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch site/styles/style.scss ./site/style.css",
+    "sass-pets": "sass --watch site/styles/pets.scss ./site/pets.css",
     "build": "sass site/styles/style.scss ./site/style.css"
   },
   "author": "me",

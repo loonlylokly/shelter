@@ -1,6 +1,13 @@
-.header {
+header {
   width: 100%;
   position: absolute;
+  display: flex;
+  justify-content: center;
+}
+
+
+.header {
+  width: $desktop-width;
   color: $text-light;
 
   &__wrapper {
@@ -36,8 +43,14 @@
     column-gap: 36px;
 
     &-item {
+      width: fit-content;
       display: flex;
       align-items: center;
+
+      & a {
+        text-decoration: none;
+        color: $text-light;
+      }
     }
 
     &-active {

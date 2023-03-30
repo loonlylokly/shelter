@@ -8,18 +8,20 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header__wrapper">
-      <div class="header__logo">
-        <h1 class="header__logo-title">Cozy House</h1>
-        <p class="header__logo-desc">Shelter for pets in Boston</p>
+  <header>
+    <div class="header">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <h1 class="header__logo-title">Cozy House</h1>
+          <p class="header__logo-desc">Shelter for pets in Boston</p>
+        </div>
+        <ul class="header__menu">
+          <li class="header__menu-item"><a class="header__menu-link header__menu-active" href="#">About the shelter</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="pets.html">Our pets</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#">Help the shelter</a></li>
+          <li class="header__menu-item"><a class="header__menu-link" href="#">Contacts</a></li>
+        </ul>
       </div>
-      <ul class="header__menu">
-        <li class="header__menu-item"><a class="header__menu-link header__menu-active">About the shelter</a></li>
-        <li class="header__menu-item"><a class="header__menu-link">Our pets</a></li>
-        <li class="header__menu-item"><a class="header__menu-link">Help the shelter</a></li>
-        <li class="header__menu-item"><a class="header__menu-link">Contacts</a></li>
-      </ul>
     </div>
   </header>
 
@@ -72,66 +74,77 @@
       </div>
     </section>
     <section class="help">
-      <h2 class="help__title">How you can help our shelter</h2>
-      <div class="help__list">
-        <div class="help__item">
-          <img src="" alt="Icon pet food" class="help__item-icon">
-          <h4 class="help__item-title">Pet food</h4>
-        </div>
-        <div class="help__item">
-          <img src="" alt="Icon pet food" class="help__item-icon">
-          <h4 class="help__item-title">Transportation</h4>
-        </div>
-        <div class="help__item">
-          <img src="" alt="Icon pet food" class="help__item-icon">
-          <h4 class="help__item-title">Toys</h4>
-        </div>
-        <div class="help__item">
-          <img src="" alt="Icon pet food" class="help__item-icon">
-          <h4 class="help__item-title">Bowls and cups</h4>
-        </div>
-        <div class="help__item">
-          <img src="" alt="Icon pet food" class="help__item-icon">
-          <h4 class="help__item-title">Shampoos</h4>
-        </div>
-        <div class="help__item">
-          <img src="" alt="Icon pet food" class="help__item-icon">
-          <h4 class="help__item-title">Vitamins</h4>
-        </div>
-        <div class="help__item">
-          <img src="" alt="Icon pet food" class="help__item-icon">
-          <h4 class="help__item-title">Medicines</h4>
-        </div>
-        <div class="help__item">
-          <img src="" alt="Icon pet food" class="help__item-icon">
-          <h4 class="help__item-title">Collars / leashes</h4>
-        </div>
-        <div class="help__item">
-          <img src="" alt="Icon pet food" class="help__item-icon">
-          <h4 class="help__item-title">Sleeping areas</h4>
+      <div class="help__wrapper">
+        <h2 class="help__title">How you can help our shelter</h2>
+        <div class="help__list">
+          <div class="help__item">
+            <img src="./assets/icons/icon-pet-food.svg" alt="Icon pet food" class="help__item-icon">
+            <h4 class="help__item-title">Pet food</h4>
+          </div>
+          <div class="help__item">
+            <img src="./assets/icons/icon-transportation.svg" alt="Icon transportation" class="help__item-icon">
+            <h4 class="help__item-title">Transportation</h4>
+          </div>
+          <div class="help__item">
+            <img src="./assets/icons/icon-toys.svg" alt="Icon toys" class="help__item-icon">
+            <h4 class="help__item-title">Toys</h4>
+          </div>
+          <div class="help__item">
+            <img src="./assets/icons/icon-bowls-and-cups.svg" alt="Icon bowls-and-cups" class="help__item-icon">
+            <h4 class="help__item-title">Bowls and cups</h4>
+          </div>
+          <div class="help__item">
+            <img src="./assets/icons/icon-shampoos.svg" alt="Icon shampoos" class="help__item-icon">
+            <h4 class="help__item-title">Shampoos</h4>
+          </div>
+          <div class="help__item">
+            <img src="./assets/icons/icon-vitamins.svg" alt="Icon vitamins" class="help__item-icon">
+            <h4 class="help__item-title">Vitamins</h4>
+          </div>
+          <div class="help__item">
+            <img src="./assets/icons/icon-medicines.svg" alt="Icon medicines" class="help__item-icon">
+            <h4 class="help__item-title">Medicines</h4>
+          </div>
+          <div class="help__item">
+            <img src="./assets/icons/icon-collars-leashes.svg" alt="Icon collars leashes" class="help__item-icon">
+            <h4 class="help__item-title">Collars / leashes</h4>
+          </div>
+          <div class="help__item">
+            <img src="./assets/icons/icon-sleeping-area.svg" alt="Icon sleeping area" class="help__item-icon">
+            <h4 class="help__item-title">Sleeping areas</h4>
+          </div>
         </div>
       </div>
     </section>
     <section class="donation">
-      <img src="" alt="dog" class="donation__img">
-      <h2 class="donation__title">You can also make a donation</h2>
-      <p class="donation__text">Name of the bank / Type of bank account</p>
-      <span class="donation__cardnumber">8380 2880 8028 8791 7435</span>
-      <p class="donation__subtext">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-    </section>
+      <div class="donation__wrapper">
+        <img src="./assets/image/donation-dog.png" alt="dog" class="donation__img">
+        <div class="donation__text">
+          <h2 class="donation__title">You can also make a donation</h2>
+          <p class="donation__desc">Name of the bank / Type of bank account</p>
+          <div class="donation__cardnumber">
+            <img src="./assets/icons/credit-card.svg" alt="icon cardnumber" class="donation__cardnumber-icon">
+            8380 2880 8028 8791 7435
+          </div>
+          <p class="donation__subdesc">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>   
+        </div>
+      </div>
+     </section>
   </main>
-  <footer>
-    <div class="footer__block">
-      <h2 class="footer__title">For questions and suggestions</h2>
-      <a href="" class="footer__link"><span class="footer__icon"></span>email@shelter.com</a>
-      <a href="" class="footer__link"><span class="footer__icon"></span>+13 674 567 75 54</a>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__block">
+        <h2 class="footer__title">For questions and suggestions</h2>
+        <a href="" class="footer__link"><img class="footer__icon" src="./assets/icons/icon-email.svg" alt="icon email">email@shelter.com</a>
+        <a href="" class="footer__link"><img class="footer__icon" src="./assets/icons/icon-phone.svg" alt="icon phone">+13 674 567 75 54</a>
+      </div>
+      <div class="footer__block">
+        <h2 class="footer__title">We are waiting for your visit</h2>
+        <a href="" class="footer__link"><img class="footer__icon" src="./assets/icons/icon-marker.svg" alt="icon address">1 Central Street, Boston<br>(entrance from the store)</a>
+        <a href="" class="footer__link"><img class="footer__icon" src="./assets/icons/icon-marker.svg" alt="icon address">18 South Park, London</a>
+      </div>
+      <img src="./assets/image/footer-puppy.png" alt="dog" class="footer__img">  
     </div>
-    <div class="footer__block">
-      <h2 class="footer__title">We are waiting for your visit</h2>
-      <a href="" class="footer__link"><span class="footer__icon"></span>1 Central Street, Boston (entrance from the store)</a>
-      <a href="" class="footer__link"><span class="footer__icon"></span>18 South Park, London</a>
-    </div>
-    <img src="" alt="dog" class="footer__img">
   </footer>  
 </body>
 </html>

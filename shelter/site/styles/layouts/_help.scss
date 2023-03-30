@@ -1,8 +1,40 @@
 .help {
+  display: flex;
+  justify-content: center;
+  
+  &__wrapper {
+    width: $content-width;
+    margin: 80px 40px 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 
-  &__lest {
+  &__title {
+    width: 310px;
+    margin: 0 0 60px;
+    text-align: center;
+  }
+
+  &__list {
+    margin: 0 85px;
     display: flex;
     flex-flow: row wrap;
     column-gap: 120px;
+    align-items: center;
+    justify-content: center;
+    row-gap: 55px;
+  }
+
+  &__item {
+    width: fit-content;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 30px;
+
+    &-title {
+      width: fit-content;
+    }
   }
 }
