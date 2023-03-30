@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background: $background-second;
-  padding: 200px 40px 96px;
+  padding: 80px 40px 98px;
 
   &__wrapper {
     width: $content-width;
@@ -25,7 +25,7 @@
   }
 
   &__slider {
-    padding: 15px 0;
+    padding: 14px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

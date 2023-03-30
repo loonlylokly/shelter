@@ -141,7 +141,6 @@ p {
   width: 52px;
   height: 52px;
   padding: 0;
-  margin: 22px 0 0 0;
   background: rgba(255, 255, 255, 0);
   border-radius: 100px;
   border: 2px solid #F1CDB3;
@@ -163,6 +162,11 @@ p {
 }
 .btn-arrow__active {
   background: #F1CDB3;
+}
+.btn-arrow__disable {
+  cursor: default;
+  border: 2px solid rgba(8, 8, 8, 0.2);
+  background: rgba(8, 8, 8, 0.2);
 }
 
 a {
@@ -239,6 +243,9 @@ header {
 .header__menu-item a {
   text-decoration: none;
   color: #FFFFFF;
+}
+.header__menu-active {
+  cursor: default;
 }
 .header__menu-active::before {
   width: 100%;
@@ -325,7 +332,7 @@ header {
   display: flex;
   justify-content: center;
   background: #F6F6F6;
-  padding: 80px 40px 0;
+  padding: 80px 40px 99px;
 }
 .pets__wrapper {
   width: 1200px;
@@ -370,9 +377,6 @@ header {
 }
 .pets__card:hover {
   transform: scale(1.1);
-}
-.pets__btn {
-  margin: 0 0 100px 0;
 }
 
 .help {

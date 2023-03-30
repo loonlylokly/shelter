@@ -164,6 +164,11 @@ p {
 .btn-arrow__active {
   background: #F1CDB3;
 }
+.btn-arrow__disable {
+  cursor: default;
+  border: 2px solid rgba(8, 8, 8, 0.2);
+  background: rgba(8, 8, 8, 0.2);
+}
 
 a {
   display: inline-block;
@@ -240,14 +245,24 @@ header {
   text-decoration: none;
   color: #FFFFFF;
 }
+.header__menu-active {
+  cursor: default;
+}
 .header__menu-active::before {
   width: 100%;
+}
+
+header {
+  position: static;
 }
 
 .header {
   color: #545454;
 }
 .header__logo-title {
+  color: #545454;
+}
+.header__logo-desc {
   color: #545454;
 }
 .header__menu-item a {
@@ -258,7 +273,7 @@ header {
   display: flex;
   justify-content: center;
   background: #F6F6F6;
-  padding: 200px 40px 96px;
+  padding: 80px 40px 98px;
 }
 .pets__wrapper {
   width: 1200px;
@@ -279,7 +294,7 @@ header {
   letter-spacing: 0.06em;
 }
 .pets__slider {
-  padding: 15px 0;
+  padding: 14px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;

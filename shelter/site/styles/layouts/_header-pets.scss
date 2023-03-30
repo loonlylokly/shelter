@@ -1,8 +1,17 @@
+header {
+  position: static;
+}
+
 .header {
   color: $text-dark;
 
-  &__logo-title {
-    color: $text-dark
+  &__logo {
+    &-title {
+      color: $text-dark;
+    }
+    &-desc {
+      color: $text-dark;
+    }
   }
 
   &__menu-item a {

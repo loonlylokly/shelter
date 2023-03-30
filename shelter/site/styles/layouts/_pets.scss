@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background: $background-second;
-  padding: 80px 40px 0;
+  padding: 80px 40px 99px;
 
   &__wrapper {
     width: $content-width;
@@ -53,9 +53,5 @@
     &:hover {
       transform: scale(1.1);
     }
-  }
-
-  &__btn {
-    margin: 0 0 100px 0;
   }
 }
