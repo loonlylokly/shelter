@@ -1,0 +1,57 @@
+.pets {
+  display: flex;
+  justify-content: center;
+  background: $background-second;
+  padding: 200px 40px 96px;
+
+  &__wrapper {
+    width: $content-width;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 45px;
+  }
+
+  &__title {
+    width: 400px;
+    text-align: center;
+    color: $text-dark-sub;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
+
+  &__slider {
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 25px;
+  }
+
+  &__card {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 30px;
+
+    & .btn-secondary {
+      margin: 0 0 30px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+
+    & button {
+      margin: 0;
+    }
+  }
+}

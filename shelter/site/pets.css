@@ -196,6 +196,57 @@ header {
   color: #545454;
 }
 
+.pets {
+  display: flex;
+  justify-content: center;
+  background: #F6F6F6;
+  padding: 200px 40px 96px;
+}
+.pets__wrapper {
+  width: 1200px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 45px;
+}
+.pets__title {
+  width: 400px;
+  text-align: center;
+  color: #4C4C4C;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+}
+.pets__slider {
+  padding: 15px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 25px;
+}
+.pets__card {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 30px;
+}
+.pets__card .btn-secondary {
+  margin: 0 0 30px;
+}
+.pets__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+}
+.pets__btns button {
+  margin: 0;
+}
+
 .footer {
   display: flex;
   justify-content: center;
