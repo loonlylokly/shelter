@@ -57,6 +57,7 @@ header {
 
     &-active {
       cursor: default;
+      pointer-events: none;
       &::before {
         width: 100%;
       }
