@@ -246,11 +246,17 @@ header {
 }
 .header__menu-active {
   cursor: default;
+  pointer-events: none;
 }
 .header__menu-active::before {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .header__wrapper {
+    margin: 30px 30px;
+  }
+}
 .promo {
   display: flex;
   justify-content: center;
@@ -258,16 +264,16 @@ header {
 }
 .promo__wrapper {
   max-width: 1200px;
-  padding-top: 180px;
-  margin: 0 40px;
+  margin: 150px 40px 0;
   display: flex;
   flex-wrap: wrap;
   column-gap: 42px;
   justify-content: center;
+  align-items: center;
 }
 .promo__block {
   width: 460px;
-  margin: 165px 0 100px;
+  padding-bottom: 50px;
   display: flex;
   flex-flow: column nowrap;
   row-gap: 42px;
@@ -286,8 +292,14 @@ header {
 }
 .promo__img {
   width: 698px;
+  margin-top: 30px;
 }
 
+@media (max-width: 768px) {
+  .promo__block btn-primary {
+    align-self: center;
+  }
+}
 .about {
   display: flex;
   justify-content: center;
@@ -295,7 +307,9 @@ header {
 .about__wrapper {
   width: 1200px;
   display: flex;
+  flex-flow: row-reverse wrap;
   column-gap: 120px;
+  row-gap: 80px;
   margin: 80px 40px 100px;
   justify-content: center;
 }
@@ -353,15 +367,17 @@ header {
   letter-spacing: 0.06em;
 }
 .pets__slider {
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  column-gap: 53px;
+  column-gap: 39px;
 }
 .pets__cards-list {
+  width: 82%;
   display: flex;
-  column-gap: 90px;
+  justify-content: space-between;
 }
 .pets__card {
   display: flex;
@@ -379,6 +395,11 @@ header {
   transform: scale(1.1);
 }
 
+@media (max-width: 1000px) {
+  .pets__card:last-of-type {
+    display: none;
+  }
+}
 .help {
   display: flex;
   justify-content: center;
@@ -399,7 +420,7 @@ header {
   margin: 0 85px;
   display: flex;
   flex-flow: row wrap;
-  column-gap: 120px;
+  column-gap: 11.6%;
   align-items: center;
   justify-content: center;
   row-gap: 55px;
@@ -424,9 +445,11 @@ header {
   margin: 0 40px 98px;
   padding: 80px 0 0 0;
   display: flex;
+  flex-flow: row-reverse wrap;
   justify-content: center;
   align-items: center;
   column-gap: 30px;
+  row-gap: 60px;
 }
 .donation__img {
   width: 505px;
@@ -488,15 +511,17 @@ header {
   max-width: 1200px;
   padding: 46px 0 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   column-gap: 160px;
+  row-gap: 65px;
 }
 .footer__block {
   width: fit-content;
   margin: 10px 0 0;
   display: flex;
   flex-flow: column nowrap;
+  justify-content: center;
   row-gap: 40px;
 }
 .footer__block:nth-of-type(2) {

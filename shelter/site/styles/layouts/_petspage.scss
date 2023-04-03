@@ -5,7 +5,7 @@
   padding: 80px 40px 98px;
 
   &__wrapper {
-    width: $content-width;
+    width: map-get($breakpoint, 'content');
     display: flex;
     flex-flow: column nowrap;
     align-items: center;

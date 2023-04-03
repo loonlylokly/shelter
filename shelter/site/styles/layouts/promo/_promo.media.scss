@@ -1,0 +1,7 @@
+@include tablet {
+  .promo {
+    &__block btn-primary {
+      align-self: center;
+    }
+  }
+}

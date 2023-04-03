@@ -1,0 +1,10 @@
+@include tablet {
+  .header {
+    &__wrapper {
+      margin: 30px 30px;
+    }
+    // &__menu {
+    //   display: none;
+    // }
+  }
+}

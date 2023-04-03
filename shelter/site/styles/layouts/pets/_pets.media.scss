@@ -1,0 +1,7 @@
+@include small-deskctop {
+  .pets {
+    &__card:last-of-type {
+      display: none;
+    }
+  }
+}

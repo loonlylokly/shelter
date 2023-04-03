@@ -1,0 +1,43 @@
+$primary: #F1CDB3;
+$primary-light: #FDDCC4;
+$text-dark: #545454;
+$text-dark-sub: #4C4C4C;
+$text-light: #FFFFFF;
+$text-light-sub: #CDCDCD;
+$text-button: #292929;
+$background-second: #F6F6F6;
+$promo-gradient-background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+$footer-gradient-background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+
+// $content-width: 1200px;
+// $desktop-width: 1280px;
+// $desktop-small-width: 1000px;
+// $tablet-width: 640px;
+// $mobile-width: 320px;
+
+$content-width: 1200px;
+$default-font: 'Open Sans', sans-serif;
+
+$breakpoint: (
+  content: 1200px,
+  xxl: 1280px,
+  xl:  1000px,
+  md: 768px,
+  sm:  320px,
+);
+
+$btn-colors: (
+    "primary": red white,
+);
+
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+);
+
+$font-size: (
+    "": 3.2rem
+);
+
+// map-get($font-weights, 'regular');

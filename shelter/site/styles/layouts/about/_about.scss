@@ -2,9 +2,11 @@
   display: flex;
   justify-content: center;
   &__wrapper {
-    width: $content-width;
+    width: map-get($breakpoint, 'content');
     display: flex;
+    flex-flow: row-reverse wrap;
     column-gap: 120px;
+    row-gap: 80px;
     margin: 80px 40px 100px;
     justify-content: center;
   }

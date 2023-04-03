@@ -5,7 +5,7 @@
   padding: 80px 40px 99px;
 
   &__wrapper {
-    width: $content-width;
+    width: map-get($breakpoint, 'content');
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -25,16 +25,20 @@
   }
 
   &__slider {
+    width: 100%;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    column-gap: 53px;
+    column-gap: 39px;
   }
 
   &__cards-list {
+    width: 82%;
     display: flex;
-    column-gap: 90px;
+    justify-content: space-between;
+    // column-gap: 8%;
+    
   }
 
   &__card {

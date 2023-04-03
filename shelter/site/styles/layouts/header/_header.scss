@@ -7,7 +7,7 @@ header {
 
 
 .header {
-  width: $desktop-width;
+  width: map-get($breakpoint, 'xxl');
   color: $text-light;
 
   &__wrapper {
