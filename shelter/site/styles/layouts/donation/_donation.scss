@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   &__wrapper {
-    width: map-get($breakpoint, 'content');
+    max-width: map-get($breakpoint, 'content');
     margin: 0 40px 98px;
     padding: 80px 0 0 0;
     display: flex;
@@ -29,7 +29,6 @@
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 3.5rem;
     line-height: 130%;
     text-align: start;
   }

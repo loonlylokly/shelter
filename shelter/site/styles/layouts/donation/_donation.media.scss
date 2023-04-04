@@ -1,3 +1,7 @@
 @include tablet {
-  
+  .donation {
+    &__img {
+      width: 73.1%;
+    }
+  }
 }

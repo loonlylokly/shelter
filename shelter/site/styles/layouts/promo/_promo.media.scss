@@ -1,7 +1,24 @@
 @include tablet {
   .promo {
-    &__block btn-primary {
-      align-self: center;
+    &__wrapper {
+      margin: 150px 4% 0;
+    }
+
+    &__block {
+      width: 65%;
+
+      & .btn-primary {
+        align-self: center;
+      }
+    }
+
+    &__title {
+      width: 89%;
+    }
+
+    &__img {
+      width: 82.5%;
+      margin: 40px 0 0 130px;
     }
   }
 }

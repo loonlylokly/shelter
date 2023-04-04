@@ -1,0 +1,18 @@
+@include tablet {
+  .help {
+    &__wrapper {
+      margin: 80px 69px 100px;
+      width: 82%;
+    }
+
+    &__list {
+      margin: 0;
+      column-gap: 0;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 170px;
+    }
+  }
+}

@@ -2,13 +2,14 @@
   display: flex;
   justify-content: center;
   &__wrapper {
-    width: map-get($breakpoint, 'content');
+    max-width: map-get($breakpoint, 'content');
     display: flex;
     flex-flow: row-reverse wrap;
     column-gap: 120px;
     row-gap: 80px;
     margin: 80px 40px 100px;
     justify-content: center;
+    align-items: center;
   }
 
   &__img {
@@ -17,7 +18,6 @@
 
   &__text {
     width: 430px;
-    margin-top: 14px;
     display: flex;
     flex-flow: column nowrap;
     row-gap: 25px;
@@ -28,7 +28,6 @@
     font-family: 'Georgia';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
     line-height: 130%;
     letter-spacing: 0.06em;
     color: $text-dark;

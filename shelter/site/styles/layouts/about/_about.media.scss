@@ -1,13 +1,9 @@
-@include deskctop {
-
-}
-
-@include small-deskctop {
-  
-}
-
 @include tablet {
-  
+  .about {
+    &__wrapper {
+      width: 82%;
+    }
+  }
 }
 
 @include mobile {

@@ -38,7 +38,7 @@ main {
 
 h1 {
   width: 186px;
-  font-family: "Georgia";
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 3.2rem;
@@ -51,10 +51,10 @@ h1 {
 
 h2 {
   margin: 0;
-  font-family: "Georgia";
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 4.4rem;
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #4C4C4C;
@@ -62,14 +62,18 @@ h2 {
 
 h3 {
   margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 3.5rem;
   line-height: 130%;
-  color: #000000;
+  letter-spacing: 0.06em;
+  color: #4C4C4C;
 }
 
 h4 {
   margin: 0;
-  font-family: "Georgia";
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -81,12 +85,6 @@ h4 {
 p {
   margin: 0;
   font-size: 1.5rem;
-}
-
-.subtitle {
-  font-size: 1.2rem;
-  line-height: 120%;
-  color: #000000;
 }
 
 .wrapper {
@@ -257,6 +255,11 @@ header {
     margin: 30px 30px;
   }
 }
+@media (max-width: 767px) {
+  .header__menu {
+    display: none;
+  }
+}
 .promo {
   display: flex;
   justify-content: center;
@@ -280,7 +283,6 @@ header {
 }
 .promo__title {
   width: 311px;
-  font-size: 4.4rem;
   letter-spacing: 0;
   color: #FFFFFF;
 }
@@ -296,8 +298,21 @@ header {
 }
 
 @media (max-width: 768px) {
-  .promo__block btn-primary {
+  .promo__wrapper {
+    margin: 150px 4% 0;
+  }
+  .promo__block {
+    width: 65%;
+  }
+  .promo__block .btn-primary {
     align-self: center;
+  }
+  .promo__title {
+    width: 89%;
+  }
+  .promo__img {
+    width: 82.5%;
+    margin: 40px 0 0 130px;
   }
 }
 .about {
@@ -305,20 +320,20 @@ header {
   justify-content: center;
 }
 .about__wrapper {
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   flex-flow: row-reverse wrap;
   column-gap: 120px;
   row-gap: 80px;
   margin: 80px 40px 100px;
   justify-content: center;
+  align-items: center;
 }
 .about__img {
   width: 300px;
 }
 .about__text {
   width: 430px;
-  margin-top: 14px;
   display: flex;
   flex-flow: column nowrap;
   row-gap: 25px;
@@ -328,7 +343,6 @@ header {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #545454;
@@ -342,14 +356,20 @@ header {
   color: #4C4C4C;
 }
 
+@media (max-width: 768px) {
+  .about__wrapper {
+    width: 82%;
+  }
+}
 .pets {
   display: flex;
   justify-content: center;
   background: #F6F6F6;
-  padding: 80px 40px 99px;
+  padding: 80px 0 99px;
 }
 .pets__wrapper {
   width: 1200px;
+  margin: 0 30px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -362,7 +382,6 @@ header {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
 }
@@ -395,7 +414,13 @@ header {
   transform: scale(1.1);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
+  .pets__wrapper {
+    margin: 0 30px;
+  }
+  .pets__slider {
+    column-gap: 1.9%;
+  }
   .pets__card:last-of-type {
     display: none;
   }
@@ -405,7 +430,7 @@ header {
   justify-content: center;
 }
 .help__wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 80px 40px 100px;
   display: flex;
   flex-flow: column nowrap;
@@ -436,12 +461,26 @@ header {
   width: fit-content;
 }
 
+@media (max-width: 768px) {
+  .help__wrapper {
+    margin: 80px 69px 100px;
+    width: 82%;
+  }
+  .help__list {
+    margin: 0;
+    column-gap: 0;
+    justify-content: space-between;
+  }
+  .help__item {
+    width: 170px;
+  }
+}
 .donation {
   display: flex;
   justify-content: center;
 }
 .donation__wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 40px 98px;
   padding: 80px 0 0 0;
   display: flex;
@@ -465,7 +504,6 @@ header {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 3.5rem;
   line-height: 130%;
   text-align: start;
 }
@@ -502,6 +540,11 @@ header {
   color: #4C4C4C;
 }
 
+@media (max-width: 768px) {
+  .donation__img {
+    width: 73.1%;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;
@@ -509,19 +552,19 @@ header {
 }
 .footer__wrapper {
   max-width: 1200px;
-  padding: 46px 0 0;
+  padding: 40px 0 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   column-gap: 160px;
-  row-gap: 65px;
+  row-gap: 25px;
 }
 .footer__block {
   width: fit-content;
-  margin: 10px 0 0;
+  margin: 0 0 40px;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   row-gap: 40px;
 }
 .footer__block:nth-of-type(2) {
@@ -537,7 +580,6 @@ header {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.2rem;
 }
@@ -558,7 +600,18 @@ header {
 }
 .footer__img {
   width: 299px;
-  margin: -8px 0 0;
+}
+
+@media (max-width: 768px) {
+  .footer__wrapper {
+    column-gap: 60px;
+    padding: 30px 0 0;
+  }
+}
+@media (max-width: 480px) {
+  h2, h3 {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,8 +3,13 @@
     &__wrapper {
       margin: 30px 30px;
     }
-    // &__menu {
-    //   display: none;
-    // }
+  }
+}
+
+@media (max-width: (map-get($breakpoint, 'md')-1)) {
+  .header {
+    &__menu {
+      display: none;
+    }
   }
 }

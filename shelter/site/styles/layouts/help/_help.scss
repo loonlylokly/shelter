@@ -3,7 +3,7 @@
   justify-content: center;
   
   &__wrapper {
-    width: map-get($breakpoint, 'content');
+    max-width: map-get($breakpoint, 'content');
     margin: 80px 40px 100px;
     display: flex;
     flex-flow: column nowrap;
