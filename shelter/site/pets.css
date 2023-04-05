@@ -331,6 +331,9 @@ header {
 .header__menu-item a {
   color: #545454;
 }
+.header__hamburger span {
+  background: #000;
+}
 
 .pets {
   display: flex;
@@ -343,6 +346,7 @@ header {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
   row-gap: 45px;
 }
 .pets__title {
@@ -388,6 +392,44 @@ header {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  .pets {
+    padding-bottom: 76px;
+  }
+  .pets__wrapper {
+    row-gap: 20px;
+  }
+  .pets__slider {
+    padding: 10px 0 16px;
+    margin: 0 55px;
+  }
+  .pets__card:nth-of-type(7), .pets__card:nth-of-type(8) {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .pets {
+    padding: 0 10px;
+  }
+  .pets__wrapper {
+    margin: 42px;
+    row-gap: 42px;
+  }
+  .pets__title {
+    width: 300px;
+    font-size: 2.5rem;
+  }
+  .pets__slider {
+    padding: 0;
+    justify-content: center;
+  }
+  .pets__btns {
+    column-gap: 10px;
+  }
+  .pets__card:nth-of-type(4), .pets__card:nth-of-type(5), .pets__card:nth-of-type(6) {
+    display: none;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;
