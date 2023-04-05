@@ -5,3 +5,48 @@
     }
   }
 }
+
+@include mobile {
+  .donation {
+    &__wrapper {
+      width: 100%;
+      margin: 42px 10px;
+      padding: 0;
+      row-gap: 37px;
+    }
+
+    &__text {
+      width: 300px;
+      align-items: center;
+      row-gap: 24px;
+    }
+    
+    &__title {
+      width: 220px;
+      text-align: center;
+    }
+
+    &__desc {
+      width: 300px;
+      font-size: 1.28rem;
+      text-align: center;
+    }
+
+    &__cardnumber {
+      width: 281px;
+      padding: 14px 10px 10px 15px;
+      font-size: 1.5rem;
+      text-align: justify;
+    }
+
+    &__subdesc {
+      width: 280px;
+      text-align: justify;
+      font-size: 1.17rem;
+    }
+
+    &__img {
+      width: 260px;
+    }
+  }
+}

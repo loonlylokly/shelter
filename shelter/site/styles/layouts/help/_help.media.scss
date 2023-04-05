@@ -16,3 +16,37 @@
     }
   }
 }
+
+@include mobile {
+  .help {
+    &__wrapper {
+      width: 100%;
+      margin: 42px 15px;
+    }
+
+    &__title {
+      width: 240px;
+      margin-bottom: 42px;
+    }
+
+    &__list {
+      align-items: start;
+      gap: 30px;
+    }
+
+    &__item {
+      width: 130px;
+      row-gap: 20px;
+      &-icon {
+        width: 50px;
+      }
+
+      &-title {
+        font-size: 1.5rem;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+      }
+    }
+  }
+}

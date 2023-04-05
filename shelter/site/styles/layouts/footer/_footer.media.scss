@@ -6,3 +6,29 @@
     }
   }  
 }
+
+@include mobile {
+  .footer {
+    &__wrapper {
+      row-gap: 40px;
+    }
+
+    &__block {
+      margin: 0;
+      align-items: center;
+
+      &:nth-of-type(2) {
+        row-gap: 40px;
+        align-items: start;
+      }
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__img {
+      width: 260px;
+    }
+  }
+}
