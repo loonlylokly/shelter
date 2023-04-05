@@ -5,15 +5,15 @@ header {
   justify-content: center;
 }
 
-
 .header {
   width: map-get($breakpoint, 'xxl');
   color: $text-light;
 
   &__wrapper {
-    margin: 30px 40px;
+    margin: 30px 45px 30px 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &__logo {
@@ -50,6 +50,7 @@ header {
       align-items: center;
 
       & a {
+        font-family: Arial, Helvetica, sans-serif;
         text-decoration: none;
         color: $text-light;
       }
@@ -61,6 +62,53 @@ header {
       &::before {
         width: 100%;
       }
+    }
+  }
+
+  &__hamburger {
+    border: none;
+    background-color: transparent;
+    display: none;
+    transition: all 0.4s;
+    box-sizing: border-box;
+    position: relative;
+    width: 30px;
+    height: 22px;
+    & span {
+      display: inline-block;
+      transition: all 0.4s;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $primary;
+      border-radius: 4px;
+      &:nth-of-type(1) {
+        top: 0;
+      }
+      &:nth-of-type(2) {
+        top: 11px;
+      }
+      &:nth-of-type(3) {
+        bottom: 0;
+      }
+    }
+
+    &.active {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+    &.active span:nth-of-type(1) {
+      -webkit-transform: translateY(11px) rotate(-45deg);
+      transform: translateY(11px) rotate(-45deg);
+    }
+    &.active span:nth-of-type(2) {
+      -webkit-transform: translateY(0) rotate(45deg);
+      transform: translateY(0) rotate(45deg);
+    }
+    &.active span:nth-of-type(3) {
+      opacity: 0;
     }
   }
 }

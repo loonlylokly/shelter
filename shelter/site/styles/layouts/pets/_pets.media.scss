@@ -16,6 +16,11 @@
 
 @media (max-width: (map-get($breakpoint, 'md')-1)) {
   .pets {
+    &__cards-list {
+      width: fit-content;
+      justify-content: center;
+    }
+
     &__card:nth-of-type(2) {
       display: none;
     }
@@ -31,6 +36,7 @@
     }
 
     &__cards_list {
+      // justify-content: space-between;
       order: 1;
     }
 

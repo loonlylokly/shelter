@@ -1,5 +1,9 @@
 @include tablet {
   .donation {
+    &__subdesc {
+      font-size: 1.22rem;
+    }
+
     &__img {
       width: 73.1%;
     }

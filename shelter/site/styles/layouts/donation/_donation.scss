@@ -49,10 +49,10 @@
     column-gap: 15px;
     background: $primary;
     border-radius: 9px;
-    font-family: 'Georgia';
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 115%;
     letter-spacing: 0.1rem;
     color: $text-dark;
@@ -60,10 +60,10 @@
 
   &__subdesc {
     width: 390px;
-    font-family: 'Roboto';
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     line-height: 18px;
     // letter-spacing: 0.03rem;
     color: $text-dark-sub;

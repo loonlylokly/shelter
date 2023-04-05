@@ -203,9 +203,10 @@ header {
   color: #FFFFFF;
 }
 .header__wrapper {
-  margin: 30px 40px;
+  margin: 30px 45px 30px 40px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .header__logo {
   width: 186px;
@@ -239,6 +240,7 @@ header {
   align-items: center;
 }
 .header__menu-item a {
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -249,6 +251,51 @@ header {
 .header__menu-active::before {
   width: 100%;
 }
+.header__hamburger {
+  border: none;
+  background-color: transparent;
+  display: none;
+  transition: all 0.4s;
+  box-sizing: border-box;
+  position: relative;
+  width: 30px;
+  height: 22px;
+}
+.header__hamburger span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #F1CDB3;
+  border-radius: 4px;
+}
+.header__hamburger span:nth-of-type(1) {
+  top: 0;
+}
+.header__hamburger span:nth-of-type(2) {
+  top: 11px;
+}
+.header__hamburger span:nth-of-type(3) {
+  bottom: 0;
+}
+.header__hamburger.active {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.header__hamburger.active span:nth-of-type(1) {
+  -webkit-transform: translateY(11px) rotate(-45deg);
+  transform: translateY(11px) rotate(-45deg);
+}
+.header__hamburger.active span:nth-of-type(2) {
+  -webkit-transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(45deg);
+}
+.header__hamburger.active span:nth-of-type(3) {
+  opacity: 0;
+}
 
 @media (max-width: 768px) {
   .header__wrapper {
@@ -258,6 +305,14 @@ header {
 @media (max-width: 767px) {
   .header__menu {
     display: none;
+  }
+  .header__hamburger {
+    display: inline-block;
+  }
+}
+@media (max-width: 480px) {
+  .header__wrapper {
+    margin: 28px 20px 30px;
   }
 }
 .promo {
@@ -466,6 +521,10 @@ header {
   }
 }
 @media (max-width: 767px) {
+  .pets__cards-list {
+    width: fit-content;
+    justify-content: center;
+  }
   .pets__card:nth-of-type(2) {
     display: none;
   }
@@ -624,25 +683,28 @@ header {
   column-gap: 15px;
   background: #F1CDB3;
   border-radius: 9px;
-  font-family: "Georgia";
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 115%;
   letter-spacing: 0.1rem;
   color: #545454;
 }
 .donation__subdesc {
   width: 390px;
-  font-family: "Roboto";
+  font-family: Arial, Helvetica, sans-serif;
   font-style: italic;
   font-weight: 400;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 18px;
   color: #4C4C4C;
 }
 
 @media (max-width: 768px) {
+  .donation__subdesc {
+    font-size: 1.22rem;
+  }
   .donation__img {
     width: 73.1%;
   }

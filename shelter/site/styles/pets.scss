@@ -1,7 +1,11 @@
-@import "abstract/constants";
+@import "base/constants";
 @import "base/base";
+@import "base/mixins";
+@import "base/extends";
 // Components
-@import "layouts/header";
-@import "layouts/header-pets";
-@import "layouts/petspage";
-@import "layouts/footer";
+@import "layouts/header/index";
+@import "layouts/header-pets/index";
+@import "layouts/petspage/index";
+@import "layouts/footer/index";
+
+@import "base/mediaq";

@@ -11,5 +11,17 @@
     &__menu {
       display: none;
     }
+
+    &__hamburger {
+      display: inline-block;
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    &__wrapper {
+      margin: 28px 20px 30px;
+    }
   }
 }
