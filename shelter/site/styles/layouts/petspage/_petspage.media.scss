@@ -1,0 +1,49 @@
+@include tablet {
+  .pets {
+    padding-bottom: 76px;
+    &__wrapper {
+      row-gap: 20px;
+    }
+
+    &__slider {
+      padding: 10px 0 16px;
+      margin: 0 55px;
+    }
+
+    &__card:nth-of-type(7),
+    &__card:nth-of-type(8) {
+      display: none;
+    }
+  }
+}
+
+@include mobile {
+  .pets {
+    padding: 0 10px;
+
+    &__wrapper {
+      margin: 42px;
+      row-gap: 42px;
+    }
+    
+    &__title {
+      width: 300px;
+      font-size: 2.5rem;
+    }
+
+    &__slider {
+      padding: 0;
+      justify-content: center;
+    }
+    
+    &__btns {
+      column-gap: 10px;
+    }
+
+    &__card:nth-of-type(4),
+    &__card:nth-of-type(5),
+    &__card:nth-of-type(6) {
+      display: none;
+    }
+  }
+}

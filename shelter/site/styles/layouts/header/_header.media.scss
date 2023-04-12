@@ -1,0 +1,31 @@
+@media (max-width: (map-get($breakpoint, 'md')+1)) {
+  .header {
+    &__wrapper {
+      margin: 30px 30px;
+    }
+  }
+}
+
+@include tablet {
+  .header {
+    &__menu {
+      display: none;
+    }
+
+    &__hamburger {
+      display: inline-block;
+    }
+
+    &__mobile-active {
+      right: 0;
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    &__wrapper {
+      margin: 28px 20px 30px;
+    }
+  }
+}

@@ -1,0 +1,34 @@
+@include tablet {
+  .about {
+    &__wrapper {
+      width: 82%;
+    }
+  }
+}
+
+@include mobile {
+  .about {
+    &__wrapper {
+      width: 100%;
+      margin: 42px 10px;
+      row-gap: 40px;
+    }
+
+    &__text {
+      width: fit-content;
+      margin: 0 15px;
+      text-align: justify;
+      row-gap: 22px;
+    }
+
+    &__title {
+      width: fit-content;
+      text-align: center;
+      margin-bottom: 3px;
+    }
+
+    &__img {
+      width: 260px;
+    }
+  }
+}

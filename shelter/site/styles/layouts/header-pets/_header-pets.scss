@@ -17,4 +17,10 @@ header {
   &__menu-item a {
     color: $text-dark;
   }
+
+  &__hamburger {
+    & span {
+      background: #000;
+    }
+  }
 }

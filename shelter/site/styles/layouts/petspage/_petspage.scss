@@ -2,14 +2,15 @@
   display: flex;
   justify-content: center;
   background: $background-second;
-  padding: 80px 40px 99px;
+  padding: 80px 40px 98px;
 
   &__wrapper {
-    width: $content-width;
+    width: map-get($breakpoint, 'content');
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    row-gap: 60px;
+    justify-content: center;
+    row-gap: 45px;
   }
 
   &__title {
@@ -25,16 +26,12 @@
   }
 
   &__slider {
+    padding: 14px 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    column-gap: 53px;
-  }
-
-  &__cards-list {
-    display: flex;
-    column-gap: 90px;
+    row-gap: 25px;
   }
 
   &__card {
@@ -43,15 +40,25 @@
     align-items: center;
     row-gap: 30px;
     background: #fff;
-    cursor: pointer;
     transition: 1s;
 
     & .btn-secondary {
-      margin: 0 0 26px;
+      margin: 0 0 30px;
     }
 
     &:hover {
       transform: scale(1.1);
+    }
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+
+    & button {
+      margin: 0;
     }
   }
 }

@@ -1,0 +1,50 @@
+@include tablet {
+  .promo {
+    &__wrapper {
+      margin: 150px 4% 0;
+    }
+
+    &__block {
+      width: 65%;
+
+      & .btn-primary {
+        align-self: center;
+      }
+    }
+
+    &__title {
+      width: 89%;
+    }
+
+    &__img {
+      width: 82.5%;
+      margin: 40px 0 0 130px;
+    }
+  }
+}
+
+
+@include mobile {
+  .promo {
+    &__block {
+      width: fit-content;
+      align-items: center;
+      row-gap: 40px;
+    }
+
+    &__title {
+      width: 250px;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
+
+    &__text {
+      text-align: center;
+    }
+
+    &__img {
+      width: 260px;
+      margin: 55px 0 0 40px;
+    }
+  }
+}

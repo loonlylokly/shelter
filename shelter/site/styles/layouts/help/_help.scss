@@ -3,7 +3,7 @@
   justify-content: center;
   
   &__wrapper {
-    width: $content-width;
+    max-width: map-get($breakpoint, 'content');
     margin: 80px 40px 100px;
     display: flex;
     flex-flow: column nowrap;
@@ -12,7 +12,7 @@
 
   &__title {
     width: 310px;
-    margin: 0 0 60px;
+    margin-bottom: 60px;
     text-align: center;
   }
 
@@ -20,7 +20,7 @@
     margin: 0 85px;
     display: flex;
     flex-flow: row wrap;
-    column-gap: 120px;
+    column-gap: 11.6%;
     align-items: center;
     justify-content: center;
     row-gap: 55px;

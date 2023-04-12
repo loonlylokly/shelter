@@ -1,0 +1,23 @@
+@mixin deskctop() {
+    @media (max-width: (map-get($breakpoint, 'xxl')-1)) {
+        @content;
+    }
+}
+
+@mixin small-deskctop() {
+    @media (max-width: map-get($breakpoint, 'xl')) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: map-get($breakpoint, 'md')) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media (max-width: map-get($breakpoint, 'sm')) {
+        @content;
+    }
+}
