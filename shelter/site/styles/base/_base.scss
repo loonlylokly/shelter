@@ -12,6 +12,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   width: 100%;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-style: normal;
@@ -19,10 +20,6 @@ body {
   line-height: 1.4;
   font-weight: normal;
   margin: 0;
-}
-
-main {
-  overflow: hidden;
 }
 
 h1 {
@@ -173,7 +170,7 @@ a {
     background: $primary;
     display: block;
     position: absolute;
-    bottom: -3px;
+    bottom: 0px;
     left: 0;
     width: 0;
     height: 3px;
@@ -185,5 +182,19 @@ a {
     &::before {
       width: 100%;
     }
+  }
+}
+
+.overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, .7);
+
+  &__active {
+    display: initial;
   }
 }
