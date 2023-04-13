@@ -35,7 +35,7 @@
           <p class="promo__text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
           <a class="btn-primary" href="#pets">Make a friend</a>  
         </div>
-        <img src="./assets/image/promo-puppy.png" alt="dog" class="promo__img">
+        <img src="./assets/images/promo-puppy.png" alt="dog" class="promo__img">
       </div>
     </section>
     <section class="about">
@@ -45,7 +45,7 @@
           <p class="about__desc">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
           <p class="about__desc">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>    
         </div>
-        <img src="./assets/image/about-pets.png" alt="cat and dog" class="about__img">
+        <img src="./assets/images/about-pets.png" alt="cat and dog" class="about__img">
       </div>
     </section>
     <section id="pets" class="pets">
@@ -55,17 +55,17 @@
           <button class="btn-arrow"><b>←</b></button>
           <div class="pets__cards-list">
             <div class="pets__card">
-              <img src="./assets/image/pets-katrine.png" alt="cat" class="pets__card-img">
+              <img src="./assets/images/pets-katrine.png" alt="cat" class="pets__card-img">
               <h4 class="pets__card-title">Katrine</h4>
               <button class="btn-secondary">Learn more</button>
             </div>
             <div class="pets__card">
-              <img src="./assets/image/pets-jennifer.png" alt="cat" class="pets__card-img">
+              <img src="./assets/images/pets-jennifer.png" alt="cat" class="pets__card-img">
               <h4 class="pets__card-title">Jennifer</h4>
               <button class="btn-secondary">Learn more</button>
             </div>
             <div class="pets__card">
-              <img src="./assets/image/pets-woody.png" alt="cat" class="pets__card-img">
+              <img src="./assets/images/pets-woody.png" alt="cat" class="pets__card-img">
               <h4 class="pets__card-title">Woody</h4>
               <button class="btn-secondary">Learn more</button>
             </div>
@@ -129,7 +129,7 @@
           </a>
           <p class="donation__subdesc">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>   
         </div>
-        <img src="./assets/image/donation-dog.png" alt="dog" class="donation__img">
+        <img src="./assets/images/donation-dog.png" alt="dog" class="donation__img">
       </div>
      </section>
   </main>
@@ -145,7 +145,7 @@
         <a class="footer__link" href="https://goo.gl/maps/Ne3HZj31v1GiMLhU7" target="_blank"><img class="footer__icon" src="./assets/icons/icon-marker.svg" alt="icon address">1 Central Street, Boston<br>(entrance from the store)</a>
         <a class="footer__link" href="https://goo.gl/maps/Ne3HZj31v1GiMLhU7"  target="_blank"><img class="footer__icon" src="./assets/icons/icon-marker.svg" alt="icon address">18 South Park, London</a>
       </div>
-      <img src="./assets/image/footer-puppy.png" alt="dog" class="footer__img">  
+      <img src="./assets/images/footer-puppy.png" alt="dog" class="footer__img">  
     </div>
   </footer>
   <div class="overlay"></div>
@@ -157,6 +157,24 @@
       <li class="header__mmenu-item"><a class="header__mmenu-link" href="#contacts">Contacts</a></li>
     </ul>
   </div>
-  <script src="./js/index.js"></script>
+  <div class="popup">
+    <button class="popup__close">x</button>
+    <div class="popup__content">
+      <img src="./assets/images/pets-jennifer.png" alt="" class="popup__content-img">
+      <div class="popup__content-text">
+        <h3 class="popup__content-title">Jennifer</h3>
+        <h4 class="popup__content-subtitle">Dog - Labrador</h4>
+        <p class="popup__content-desc">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a storm in the house if she has all of her favorite toys.</p>
+        <ul class="popup__content-props">
+          <li><span><b>Age:</b> 2 months</span></li>
+          <li><span><b>Inoculations:</b> none</span></li>
+          <li><span><b>Diseases:</b> none</span></li>
+          <li><span><b>Parasites:</b> none</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="./js/pets.js"></script>
+  <script type="module" src="./js/index.js"></script>
 </body>
 </html>
