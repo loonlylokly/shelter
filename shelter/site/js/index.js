@@ -13,7 +13,6 @@ const subtitlePopup = document.querySelector('.popup__content-subtitle');
 const descPopup = document.querySelector('.popup__content-desc');
 const propsPopup = document.querySelector('.popup__content-props');
 const body = document.body;
-// const scrollY = body.style.top;
 
 function scrollOn() {
   const scrollY = body.style.top;
