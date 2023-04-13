@@ -65,9 +65,7 @@ cards.forEach((item) => {
     } else {
       currentCard = e.target.parentNode.childNodes[3].innerText;
     }
-    console.log(currentCard, e.target);
     const currentPet = pets.find((item) => item.name === currentCard);
-    console.log(pets);
     imgPopup.src = currentPet.img;
     titlePopup.innerText = currentPet.name;
     subtitlePopup.innerText = `${currentPet.type} - ${currentPet.breed}`;
