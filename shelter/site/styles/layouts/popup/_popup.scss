@@ -1,0 +1,84 @@
+.popup {
+  display: none;
+  flex-flow: column nowrap;
+  align-items: start;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-47.3%, -50%);
+  width: 952px;
+
+  &__active {
+    display: flex;
+  }
+
+  &__close {
+    align-self: end;
+    width: 52px;
+    height: 52px;
+    margin: 0 10px;
+    padding: 0;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 2.2rem;
+    cursor: pointer;
+
+    &:hover {
+      background: $primary;
+    }
+  }
+
+  &__content {
+    width: 900px;
+    background: #fff;
+    display: flex;
+    border-radius: 9px;
+    
+    &-img {
+      width: 500px;
+      height: 500px;
+    }
+
+    &-text {
+      width: 360px;
+      margin: 50px 20px 0px 29px;
+    }
+
+    &-subtitle {
+      margin-top: 6px;
+    }
+
+    &-desc {
+      margin-top: 44px;
+      font-family: 'Georgia';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.5rem;
+      line-height: 110%;
+      letter-spacing: 0.06em;
+    }
+
+    &-props {
+      margin: 44px 0 0 0;
+      padding: 0 15px;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 10px;
+
+      & li {
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 110%;
+        letter-spacing: 0.1em;
+        color: $primary;
+
+        & span {
+          color: #000;
+        }
+      }
+    }
+  }
+}
