@@ -517,6 +517,7 @@ header {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: space-between;
   row-gap: 60px;
 }
 .pets__title {
@@ -537,10 +538,31 @@ header {
   align-items: center;
   column-gap: 39px;
 }
-.pets__cards-list {
+.pets__carusel {
   width: 82%;
+  overflow: hidden;
+  height: 435px;
+}
+.pets__cards-list {
+  position: relative;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  transition: all 1s;
+}
+.pets__cards-list:nth-of-type(2) {
+  margin-top: -435px;
+}
+.pets__cards-list:nth-of-type(3) {
+  margin-top: -435px;
+}
+.pets__cards-list-left {
+  margin-left: -110%;
+  transition: all 1s;
+}
+.pets__cards-list-right {
+  margin-left: 110%;
+  transition: all 1s;
 }
 .pets__card {
   display: flex;
